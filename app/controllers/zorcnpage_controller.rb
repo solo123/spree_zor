@@ -1,4 +1,4 @@
-class AboutController < ActionController::Base
+class AboutController < Spree::BaseController
 	  helper :products
       respond_to :html
   
