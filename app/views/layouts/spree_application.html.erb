@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+  <head data-hook="inside_head">
+    <%= render 'shared/head' %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <%= render 'shared/header' %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
+  </body>
+</html>

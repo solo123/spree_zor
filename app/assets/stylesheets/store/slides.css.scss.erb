@@ -1,0 +1,41 @@
+  .slides_container {
+    width:470px;
+    height:170px;
+	  div {
+	    width:470px;
+	    height:170px;
+	    display:block;
+	    img { z-index: -1; }
+	  }
+	}
+
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin: 3px 0 0 auto;
+	width:130px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(<%= asset_path 'store/pagination.png' %>);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*!
+ * Site:
+ * Author: thirteen
+ * Created: thirteen
+ * Updated:
+ * Updated by:
+ * contact: 547318004
+-----------------------------------------------------------
+reset-base-wrapper-section(layout|property|color)-hack
+-----------------------------------------------------------
+ */
+/* =css reset= */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:2px; border:0; }
+caption { text-align:left; font-weight:bold; font-size:12px; color:#FFF; }
+img { border:0; }
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style:inherit; font-weight:inherit; }
+li { list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+input, button, textarea, select, optgroup, option { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }
+input, button, textarea, select { *font-size:100%; }
+strong { font-weight:bold; }
+/* =body= */
+body { font:12px/1.6em "宋体"; background:#000; }
+/* =link= */
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+/* =display=*/
+.show { display:block; }
+.hide { display:none; }
+/*=float clear=*/
+.flL { float:left; display:inline; }
+.flR { float:right; display:inline; }
+.fix { clear:both; *zoom:1; }
+.fix:after { display:block; clear:both; height:0; overflow:hidden; visibility:hidden; content:"."; }
+/*=margin,padding=*/
+.mt10 { margin-top:5px; }
+.pt10 { padding-top:10px; }
+/*=color=*/
+/*=layout=*/
+#wrapper { width:900px; margin:0 auto; }
+#header { position:relative; height:390px; }
+#container {  }
+#footer { height:100px; }
+.main { float:right; width:655px; overflow:hidden; }
+.aside { float:left; width:234px; overflow:hidden; }
+
+/*=header=*/
+.logo { position:absolute; top:20px; width:150px; height:60px; background:#000; }
+.nav { position:absolute; top:56px; right:0; width:500px; height:24px; }
+.nav ul { width:500px; }
+.nav li { float:left; width:100px; line-height:24px; }
+.nav li a { display:block; border-left:3px solid #21608c; text-indent:10px; font-weight:bold; color:#AAA; }
+.nav li a:hover,.nav li a.on { border-left:3px solid #be4041; text-decoration:none; color:#FFF; }
+.banner { position:absolute; top:90px; width:900px; height:288px; background:#FFF; overflow:hidden; }
+.bannerlist img { width:900px; }
+.banner div {width:899px; height:271px;display:block;}
+/*=footer=*/
+.link { padding-top:10px; }
+.linkleft, .linkright { width:48px; height:180px; }
+.linklist { width:804px; height:180px; background:url(../images/linkback.gif) repeat-x; }
+.linktitle { width:224px; height:36px; padding:20px 0 0 10px; }
+.linklist .linkArea { width:784px; margin:20px auto 0; overflow:hidden; }
+.linklist ul {  }
+.linklist li { float:left; display:inline; height:52px; margin-right:11px; }
+.linklist li a { display:block; border:1px solid #FFF; }
+.linklist li a:hover { border:1px solid #FF0000; }
+#list, #imglist { width:10000%; }
+#list01, #list02, #imglist01, #imglist02 { float:left; display:inline; }
+.copyright { height:100px; margin-top:20px; text-align:center; color:#FFF; }
+/*=category=*/
+.asideTop, .asideBottom { width:234px; height:48px; background:url(../images/aisdetop.gif) no-repeat; }
+.asideMiddle { width:234px; padding:15px 10px 30px 15px; background:url(../images/asideback.gif) repeat-y; }
+.asideMiddle h2 { height:30px; padding-left:10px; font:bold 14px "宋体"; color:#FFF; }
+.asideMiddle ul { width:204px; overflow:hidden; border-bottom:1px solid #53555a; }
+.asideMiddle li { padding-left:30px; line-height:24px; border-top:1px solid #53555a; border-bottom:1px solid #1a1c1f; }
+.asideMiddle li a { color:#FFF; }
+.asideMiddle li a:hover { color:#ff0000; }
+.asideBottom { background:url(../images/aisdebottom.gif) no-repeat; }
+/*=crumb=*/
+.crumb { line-height:40px; color:#FFF; }
+.crumb a, .crumb span { padding-right:6px; color:#FFF; }
+.crumb a:hover { color:#FF0000; }
+.crumb span.current { cursor:default; color:#FF0000; }
+/*=index=*/
+.prListTop, .prListBottom { height:8px; background:url(../images/top.gif) no-repeat; overflow:hidden; }
+.prListBottom { background:url(../images/bottom.gif) no-repeat; }
+.prList { position:relative; background:#191919; }
+.prList .title { position:absolute; left:20px; top:15px; width:860px; height:25px; line-height:25px; background:url(../images/title.gif) no-repeat; text-indent:16px; font-weight:bold; color:#FFF; }
+.prList .more { position:absolute; display:block; right:32px; top:6px; width:29px; height:11px; }
+.prList ul, .prList .detail { width:848px; margin-left:4px; border-left:1px solid #918675; border-right:1px solid #918675; padding:50px 20px 20px; color:#FFF; overflow:hidden; }
+.prList li { float:left; width:250px; margin:20px 24px 0 0; padding:0 0 10px 8px; line-height:25px; color:#FFF;height:180px;overflow:hidden; }
+.prList li .pic, .gamedetail .pic { float:left; width:120px; height:160px; }
+.prList li .pic a, .gamedetail .pic a { display:block; width:118px; height:158px; border:1px solid #FFF; }
+.prList li .pic a:hover, .gamedetail .pic a:hover { border:1px solid #FF0000; }
+.prList li .gameInfor, .gamedetail .gameInfor { float:right; width:120px;  }
+.prList li .gameName a, .gamedetail a { font-weight:bold; color:#FFF; }
+.prList li .gameName a:hover, .gamedetail a:hover, .prList li .gameInfor span, .gamedetail .gameInfor span { color:#FF0000; }
+.prList li .gameInfor p, .gamedetail .gameInfor p { line-height:20px; }
+/*=page=*/
+.page { position:absolute; bottom:15px; right:60px; height:20px; line-height:20px;  }
+.page a, .page span { padding-right:10px; color:#FFF; }
+.page a:hover, .newslist .prList li a:hover { text-decoration:none; color:#FF0000; }
+/*=other=*/
+.gamelist .prListTop, .gamelist .prListBottom { height:8px; background:url(../images/maintop.gif) no-repeat; overflow:hidden; }
+.gamelist .prListBottom { background:url(../images/mainbottom.gif) no-repeat; }
+.gamelist .prList ul, .gamelist .prList .detail { width:602px; padding:10px 20px 50px; }
+.newslist .prList .detail { padding:15px 20px 30px; }
+.newslist .prList .detail h1 { border-bottom:1px solid #CCC; padding:10px 0; text-indent:10px; font:bold 14px "宋体"; }
+.newslist .prList .detail .newsInfo { line-height:24px; text-indent:10px; }
+.newslist .prList .detail .newsCon { padding:10px 0 0 10px; }
+.newslist .prList .newsInfo span { margin-right:20px; }
+.gamelist .prList li, .gamelist .prList .gamedetail { width:560px; margin:0 20px; padding:15px 0; }
+.gamelist .prList li .gameInfor, .gamedetail .gameInfor { width:400px; padding-top:10px; }
+.newslist .prList ul { padding:20px 20px 50px; }
+.newslist .prList li { position:relative; width:100%; height:30px; line-height:30px; margin:0; padding:0; text-indent:20px; border-bottom:1px dashed #CCC; }
+.newslist .prList li .time { position:absolute; right:15px; }
+.newslist .prList li .author { position:absolute; right:160px; }
+.newslist .prList li a { color:#FFF; }
+.gamelist .prList .title { position:static; width:615px; margin:10px 0 0 -5px; background:url(../images/maintitle.gif) no-repeat; }
+.gameIntro { padding:5px 10px; line-height:20px; }
+.gameIntro p { text-indent:24px; padding-bottom:10px; }
+.show { width:602px; padding:10px 0; overflow:hidden; }
+.show dl { padding:0 30px; }
+.show dd { float:left; display:inline; margin-right:40px; }
+.show dd img { border:5px solid #FFF; }

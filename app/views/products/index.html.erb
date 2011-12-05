@@ -1,0 +1,48 @@
+<div id="container" class="mt10 fix">
+  <div class="crumb fix">
+    首页<span>&gt;</span>产品中心
+  </div>
+  <div class="main">
+    <div class="gamelist">
+      <div class="prListTop">
+        &nbsp;
+      </div>
+      <div class="prList fix">
+
+        <% if params[:keywords] %>
+        <div data-hook="search_results">
+          <% if @products.empty? %>
+          <%= t(:no_products_found) %>
+          <% else %>
+          <%= render 'shared/products', :products => @products, :taxon => @taxon %>
+          <% end %>
+        </div>
+        <% else %>
+        <div data-hook="homepage_products">
+          <%= render 'shared/products', :products => @products, :taxon => @taxon %>
+        </div>
+        <% end %>
+      </div>
+      <div class="prListBottom">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+  <div class="aside">
+    <div class="asideTop">
+      &nbsp;
+    </div>
+    <div class="asideMiddle">
+
+     <h2>公司产品</h2>
+      <% if "products" == @current_controller && @taxon %>
+        <%= render 'shared/filters' %>
+      <% else %>
+        <%= render 'shared/taxonomies' %>
+      <% end %>
+    </div>
+    <div class="asideBottom">
+      &nbsp;
+    </div>
+  </div>
+</div>

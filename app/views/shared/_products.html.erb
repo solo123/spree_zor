@@ -1,0 +1,38 @@
+
+<%
+  paginated_products = @searcher.products if params.key?(:keywords)
+  paginated_products ||= products
+%>
+<% if products.empty? %>
+  <%= t(:no_products_found) %>
+<% elsif params.key?(:keywords) %>
+  <h3><%= t(:search_results, :keywords => h(params[:keywords])) %></h3>
+<% end %>
+
+<% if products.any? %>
+<ul class="fix">
+  <% products.each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+      <li>
+        <div class="pic"><%= link_to small_image(product), product %></div>
+        <div class="gameInfor">
+          <div class="gameName"><%= link_to product.name, product, :class => 'info' %></div>
+          <div class='gameType'><%= product_price(product) %></div>
+          <div class="gameType">游戏类型：</div>
+          <div class="gameType">上市时间： </div>
+          <div class="gameHot">人气指数：<span></span></div>
+          <p class="gameDetail">简介：</p>
+        </div>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+<% end %>
+
+<hr class="space" />
+
+<% if paginated_products.respond_to?(:num_pages)
+      params.delete(:search)
+      params.delete(:taxon)
+%><%= paginate paginated_products %><% end %>
+<hr class="space" />

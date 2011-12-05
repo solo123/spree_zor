@@ -1,0 +1,46 @@
+<div id="container" class="mt10 fix">
+  <div class="crumb fix">
+    
+  </div>
+  <div class="main">
+
+    <div class="gamelist">
+      <div class="prListTop">&nbsp;</div>
+      <div class="prList fix">
+        <div style='padding:20px;'>
+          <div id="product-images" >
+            <div id="main-image">
+              <%= render 'image' %>
+            </div>
+            <div id="thumbnails">
+              <%= render 'thumbnails', :product => @product %>
+            </div>
+          </div>  
+          <div style='clear:both'></div>
+          <div id="product-description" style='color:white;margin-top:10px;'>
+            <%= product_description(@product) rescue t(:product_has_no_description) %>
+            <div>
+              <%= render 'properties' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prListBottom">&nbsp;</div>
+    </div>
+
+  </div>
+
+  <div class="aside">
+    <div class="asideTop">
+      &nbsp;
+    </div>
+    <div class="asideMiddle">
+      <%= render 'taxons' %>
+    </div>
+    <div class="asideBottom">
+      &nbsp;
+    </div>
+  </div>  
+</div>
+
+
