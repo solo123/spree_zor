@@ -1,3 +1,7 @@
+<style>
+.thumbnails{}
+.thumbnails li {width:120px; float:right;}
+</style>
 <div id="container" class="mt10 fix">
   <div class="crumb fix">
     
@@ -12,7 +16,7 @@
             <div id="main-image">
               <%= render 'image' %>
             </div>
-            <div id="thumbnails">
+            <div id="thumbnails" style="width:120px;float:left">
               <%= render 'thumbnails', :product => @product %>
             </div>
           </div>  

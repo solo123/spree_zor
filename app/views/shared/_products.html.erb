@@ -10,19 +10,13 @@
 <% end %>
 
 <% if products.any? %>
-<ul class="fix">
+<ul id="products" class="product-listing" data-hook>
   <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <li>
-        <div class="pic"><%= link_to small_image(product), product %></div>
-        <div class="gameInfor">
-          <div class="gameName"><%= link_to product.name, product, :class => 'info' %></div>
-          <div class='gameType'><%= product_price(product) %></div>
-          <div class="gameType">游戏类型：</div>
-          <div class="gameType">上市时间： </div>
-          <div class="gameHot">人气指数：<span></span></div>
-          <p class="gameDetail">简介：</p>
-        </div>
+      <li id="product_<%= product.id %>" data-hook="products_list_item">
+        <%= link_to product.name, product, :class => 'info' %>
+        <%= link_to product_image(product), product %>
+        <span class="price selling"><%= product_price(product) %></span>
       </li>
     <% end %>
   <% end %>

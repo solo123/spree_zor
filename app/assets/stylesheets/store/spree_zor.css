@@ -2,4 +2,5 @@
  *= require store/spree_core
  *= require store/slides
  *= require store/main
+ *= require store/product
 */
