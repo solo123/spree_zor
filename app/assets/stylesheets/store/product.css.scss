@@ -1,0 +1,65 @@
+.clear {clear:both;}
+
+.zor-main{
+	border:solid 1px #999;
+	padding: 18px;
+	color:white;
+	h1{
+		font-size: 3em;
+		font-weight:bold;
+		margin: 6px;
+	}
+}
+#product-images{
+	width:300px;
+	float:left;
+}
+#product-description{
+	float: left;
+	width: 300px;
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+#main-image{
+	width: 242px;
+	height: 242px;
+	border: solid 1px #333;
+	margin-top:12px;
+	text-align: center;
+	img {margin:1px auto;}
+}
+#thumbnails{
+	width: 260px;
+}
+.thumbnails{
+	li{
+		width:50px;
+		height:50px;
+		background-color:#333;
+		float:left;
+	}
+      
+}
+
+#products{
+	li{
+		width: 300px;
+		height: 300px;
+		float: left;
+		.title {
+		}
+		.title a:link, .title a:visited{
+			font-size: 2em;
+			color: white;
+		}
+		.pic {
+			margin-bottom: 4px;
+			width: 242px;
+			height: 242px;
+			background-color: #333;
+			text-align:center;
+		}
+
+
+	}
+}

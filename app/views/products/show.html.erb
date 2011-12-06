@@ -1,45 +1,35 @@
 <div id="container" class="mt10 fix">
   <div class="crumb fix">
-    
   </div>
   <div class="main">
+    <div class='zor-main'>
+          <h1><%= accurate_title %></h1>
 
-    <div class="gamelist">
-      <div class="prListTop">&nbsp;</div>
-      <div class="prList fix">
-        <div style='padding:20px;'>
-          <div id="product-images" >
-            <div id="main-image">
+          <div id="product-images" data-hook="product_images">
+            <div id="main-image" data-hook>
               <%= render 'image' %>
             </div>
-            <div id="thumbnails">
+            <div id="thumbnails" data-hook>
               <%= render 'thumbnails', :product => @product %>
             </div>
-          </div>  
-          <div style='clear:both'></div>
-          <div id="product-description" style='color:white;margin-top:10px;'>
+          </div>
+
+          <div id="product-description" data-hook="product_description">
             <%= product_description(@product) rescue t(:product_has_no_description) %>
-            <div>
+            <div data-hook="product_properties">
               <%= render 'properties' %>
             </div>
           </div>
-        </div>
+          <div class='clear'></div>
       </div>
-      <div class="prListBottom">&nbsp;</div>
-    </div>
-
+    <div class='clear'></div>
   </div>
-
   <div class="aside">
-    <div class="asideTop">
-      &nbsp;
-    </div>
+    <div class="asideTop"></div>
     <div class="asideMiddle">
       <%= render 'taxons' %>
     </div>
-    <div class="asideBottom">
-      &nbsp;
-    </div>
+    <div class="asideBottom"></div>
   </div>  
 </div>
 
