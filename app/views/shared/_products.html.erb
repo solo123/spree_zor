@@ -14,7 +14,7 @@
   <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
       <li>
-        <div class="pic"><%= link_to small_image(product), product %></div>
+        <div class="pic"><%= link_to product_image(product), product %></div>
         <div class="gameInfor">
           <div class="gameName"><%= link_to product.name, product, :class => 'info' %></div>
           <div class='gameType'><%= product_price(product) %></div>
