@@ -40,26 +40,49 @@
 	}
       
 }
+.prList{
+	li{
+		margin: 8px 2px 0 0;
+		padding: 10 10 10px 10px;
+		line-height: 3px;
+		color: white;
+		overflow: hidden;
+	}
+      
+}
 
 #products{
+	padding:10 10 10px 10px;
 	li{
-		width: 300px;
-		height: 300px;
+		width: 123px;
+		height: 158px;
 		float: left;
+
 		.title {
+			font: 14px/1.6em "宋体";
 		}
 		.title a:link, .title a:visited{
-			font-size: 2em;
+			
 			color: white;
 		}
 		.pic {
-			margin-bottom: 4px;
-			width: 242px;
-			height: 242px;
+
+			margin-bottom: 10px;
+			width: 123px;
+			height: 158px;
 			background-color: #333;
 			text-align:center;
+			padding:10 10 10px 10px;
+
 		}
 
 
 	}
 }
+
+
+#products .pic img {
+	width:123px;
+	height:158px;
+}
+

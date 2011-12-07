@@ -98,3 +98,46 @@ a:hover { text-decoration:underline; }
 .show dl { padding:0 30px; }
 .show dd { float:left; display:inline; margin-right:40px; }
 .show dd img { border:5px solid #FFF; }
+
+
+/*=index=*/
+.prListTop, .prListBottom { height:8px; background:url(../images/top.gif) no-repeat; overflow:hidden; }
+.prListBottom { background:url(../images/bottom.gif) no-repeat; }
+.prList { position:relative; background:#191919; }
+.prList .title { position:absolute; left:20px; top:15px; width:860px; height:25px; line-height:25px; background:url(../images/title.gif) no-repeat; text-indent:16px; font-weight:bold; color:#FFF; }
+.prList .more { position:absolute; display:block; right:32px; top:6px; width:29px; height:11px; }
+.prList ul, .prList .detail { width:848px; margin-left:4px; border-left:1px solid #918675; border-right:1px solid #918675; padding:50px 20px 20px; color:#FFF; overflow:hidden; }
+.prList li { float:left; width:250px; margin:20px 24px 0 0; padding:0 0 10px 8px; line-height:25px; color:#FFF;height:180px;overflow:hidden; }
+.prList li .pic, .gamedetail .pic { float:left; width:120px; height:160px; }
+.prList li .pic a, .gamedetail .pic a { display:block; width:118px; height:158px; border:1px solid #FFF; }
+.prList li .pic a:hover, .gamedetail .pic a:hover { border:1px solid #FF0000; }
+.prList li .gameInfor, .gamedetail .gameInfor { float:right; width:120px;  }
+.prList li .gameName a, .gamedetail a { font-weight:bold; color:#FFF; }
+.prList li .gameName a:hover, .gamedetail a:hover, .prList li .gameInfor span, .gamedetail .gameInfor span { color:#FF0000; }
+.prList li .gameInfor p, .gamedetail .gameInfor p { line-height:20px; }
+/*=page=*/
+.page { position:absolute; bottom:15px; right:60px; height:20px; line-height:20px;  }
+.page a, .page span { padding-right:10px; color:#FFF; }
+.page a:hover, .newslist .prList li a:hover { text-decoration:none; color:#FF0000; }
+.gamelist .prListTop, .gamelist .prListBottom { height:8px; background:url(../images/maintop.gif) no-repeat; overflow:hidden; }
+.gamelist .prListBottom { background:url(../images/mainbottom.gif) no-repeat; }
+.gamelist .prList ul, .gamelist .prList .detail { width:602px; padding:10px 20px 50px; }
+.newslist .prList .detail { padding:15px 20px 30px; }
+.newslist .prList .detail h1 { border-bottom:1px solid #CCC; padding:10px 0; text-indent:10px; font:bold 14px "宋体"; }
+.newslist .prList .detail .newsInfo { line-height:24px; text-indent:10px; }
+.newslist .prList .detail .newsCon { padding:10px 0 0 10px; }
+.newslist .prList .newsInfo span { margin-right:20px; }
+.gamelist .prList li, .gamelist .prList .gamedetail { width:560px; margin:0 20px; padding:15px 0; }
+.gamelist .prList li .gameInfor, .gamedetail .gameInfor { width:400px; padding-top:10px; }
+.newslist .prList ul { padding:20px 20px 50px; }
+.newslist .prList li { position:relative; width:100%; height:30px; line-height:30px; margin:0; padding:0; text-indent:20px; border-bottom:1px dashed #CCC; }
+.newslist .prList li .time { position:absolute; right:15px; }
+.newslist .prList li .author { position:absolute; right:160px; }
+.newslist .prList li a { color:#FFF; }
+.gamelist .prList .title { position:static; width:615px; margin:10px 0 0 -5px; background:url(../images/maintitle.gif) no-repeat; }
+.gameIntro { padding:5px 10px; line-height:20px; }
+.gameIntro p { text-indent:24px; padding-bottom:10px; }
+.show { width:602px; padding:10px 0; overflow:hidden; }
+.show dl { padding:0 30px; }
+.show dd { float:left; display:inline; margin-right:40px; }
+.show dd img { border:5px solid #FFF; }
