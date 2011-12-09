@@ -53,27 +53,27 @@
 
 #products{
 	padding:10 10 10px 10px;
+	border:solid 1px #333;
+
 	li{
 		width: 123px;
-		height: 158px;
+		height: 190px;
 		float: left;
-    margin:14px;
+		margin:14px;
+
 		.title {
 			font: 14px/1.6em "宋体";
 		}
 		.title a:link, .title a:visited{
-			
 			color: white;
 		}
 		.pic {
-
 			margin-bottom: 10px;
 			width: 123px;
 			height: 158px;
 			background-color: #333;
 			text-align:center;
 			padding:10 10 10px 10px;
-
 		}
 
 
@@ -86,3 +86,23 @@
 	height:158px;
 }
 
+.taxon{
+	h2 {
+		font-size: 2em;
+		font-weight: bold;
+		color:white;
+		margin-top: 20px;
+		margin-bottom: 8px;
+	}
+	h2 a:link, h2 a:visited { color:white;}
+}
+
+#product-properties{
+	margin-top:12px;
+	border-top: solid 1px #333;
+	padding-top: 8px;
+	
+	dd a:link, dd a:visited {
+		color:white;
+	}
+}

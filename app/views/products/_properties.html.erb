@@ -2,8 +2,12 @@
 <dl id="product-properties" class="table-display" data-hook>
 <% for product_property in @product_properties 
     css_class = cycle('even', 'odd') %>
-  <dt class="<%= css_class %>"><%= product_property.property.presentation %></dt>
-  <dd class="<%= css_class %>"><%= product_property.value %></dd>
+  <%
+  	song_name, song_url = product_property.value.split(',')
+  %>
+  <dd><%= link_to song_name, '/songs/' + song_url %></dd>
+
+
 <% end %>
 </dl>
 <% end %>

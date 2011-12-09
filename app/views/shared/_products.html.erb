@@ -18,13 +18,14 @@
         <div class="title">
           <%= link_to product.name, product, :class => 'info' %>
         </div>
+        <div class='clear'></div>
       </li>
     <% end %>
   <% end %>
+  <div class='clear'></div>
 </ul>
 <% end %>
 <div class='clear'></div>
-<hr class="space" />
 <% if paginated_products.respond_to?(:num_pages)
       params.delete(:search)
       params.delete(:taxon)
